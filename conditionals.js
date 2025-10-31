@@ -2,7 +2,7 @@
 
 let score = Math.floor(Math.random()* 101); 
 
-console.log(score)
+let displayscore = "          " + score
 
 // TODO: Create a variable called passingGrade and set it to 60
 
@@ -26,3 +26,5 @@ if (score === 100)
     {
         console.log("perfect score")
     }
+
+document.getElementById("score").innerHTML= displayscore
