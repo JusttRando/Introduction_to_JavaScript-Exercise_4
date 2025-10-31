@@ -2,7 +2,7 @@
 
 let score = Math.floor(Math.random()* 101); 
 
-let displayscore = "          " + score
+
 
 // TODO: Create a variable called passingGrade and set it to 60
 
@@ -28,7 +28,14 @@ if (score === 100)
         console.log("perfect score")
     }
 
+
+// displaying score with space inbetween    
+
+let displayscore = "          " + score
+
 document.getElementById("score").innerHTML= displayscore
+
+// wanted to give the site a letter grading system 
 
 let standard = ""
 
@@ -45,12 +52,7 @@ if (score === 100)
 
 document.getElementById("Grade").innerHTML= standard
 
-let count = 0
-
-function increment() 
-{
-    window.location.reload();
-}
+// this determines the which word is displayed 
 
 let stats = ""
 
@@ -65,5 +67,11 @@ if (score === 100)
         stats = "prefect score"
     }
 
-
 document.getElementById("status").innerHTML= stats
+
+//restarts webpage when button is clicked
+
+function increment() 
+{
+    window.location.reload();
+}
