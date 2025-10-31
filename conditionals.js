@@ -15,9 +15,10 @@ let passingGrade = 60
 // TODO: Print "Passed" or "Failed" based on the score
 
 // TODO: Add another condition to check if the score is perfect (100)
-
+ 
 if (score >= passingGrade)
     {
+        
         console.log("Passed")
     }
     else console.log("Failed")
@@ -28,3 +29,41 @@ if (score === 100)
     }
 
 document.getElementById("score").innerHTML= displayscore
+
+let standard = ""
+
+if (score >= passingGrade)
+    {
+        standard = "A"
+    }
+    else standard = "F"
+
+if (score === 100)
+    {
+        standard = "A +"
+    }
+
+document.getElementById("Grade").innerHTML= standard
+
+let count = 0
+
+function increment() 
+{
+    window.location.reload();
+}
+
+let stats = ""
+
+if (score >= passingGrade)
+    {
+       stats = "passed"
+    }
+    else stats = "failed"
+
+if (score === 100)
+    {
+        stats = "prefect score"
+    }
+
+
+document.getElementById("status").innerHTML= stats
